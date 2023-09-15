@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EXCLAMATION LOVE AR</title>
+    <meta name="description" content="Augmented Reality by DHYNUG" />
+    <meta name="keywords" content="dhynug, augmented reality, ar" />
+    <meta name="author" content="dhynug" />
+    <link rel="shortcut icon" href="https://lab.dhynug.com/img/favicon-image.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Nunito:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+              <feComposite in="SourceGraphic" in2="goo"/>
+            </filter>
+          </defs>
+        </svg>
+        
+        <span class="button--bubble__container">
+          <a href="./cam" class="button button--bubble">
+            OPEN CAMERA
+          </a>
+          <span class="button--bubble__effect-container">
+            <span class="circle top-left"></span>
+            <span class="circle top-left"></span>
+            <span class="circle top-left"></span>
+        
+            <span class="button effect-button"></span>
+        
+            <span class="circle bottom-right"></span>
+            <span class="circle bottom-right"></span>
+            <span class="circle bottom-right"></span>
+          </span>
+        </span>
+        </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
